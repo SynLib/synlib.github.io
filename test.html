@@ -3,42 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website Title</title>
+    <title>Your Website</title>
     <style>
         /* Basic styling */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-image: url('pictures/stock.jpg'); /* Replace with your background image URL */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
         }
         header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .main-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-gap: 20px;
-        }
-        .main-content img {
-            width: 100%;
-            height: auto;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
             text-align: center;
             padding: 20px;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
+            color: #fff;
+        }
+        nav {
+            margin-top: 50px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li:last-child {
+            margin-right: 0;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #007bff; /* Button background color */
+            border: 2px solid #007bff; /* Button border color */
+            transition: background-color 0.3s, color 0.3s;
+            font-size: 16px;
+        }
+        nav ul li a:hover {
+            background-color: #0056b3; /* Button background color on hover */
+            color: #fff; /* Text color on hover */
         }
     </style>
 </head>
@@ -47,23 +57,15 @@
         <h1>Welcome to Your Website</h1>
     </header>
 
-    <div class="container">
-        <div class="main-content">
-            <div>
-                <h2>Section 1</h2>
-                <p>This is a placeholder text for section 1. You can add your content here.</p>
-                <img src="https://via.placeholder.com/500" alt="Placeholder Image">
-            </div>
-            <div>
-                <h2>Section 2</h2>
-                <p>This is a placeholder text for section 2. You can add your content here.</p>
-                <img src="https://via.placeholder.com/500" alt="Placeholder Image">
-            </div>
-        </div>
-    </div>
+    <nav>
+        <ul>
+            <li><a href="synopses.html">Synopses</a></li>
+            <li><a href="https://github.com/SynLib/SynLib" target="_blank">Code</a></li>
+            <li><a href="about.html">About</a></li>            
+            <li><a href="publications.html">Publications</a></li>
+            
+        </ul>
+    </nav>
 
-    <footer>
-        <p>&copy; 2024 Your Website. All rights reserved.</p>
-    </footer>
 </body>
 </html>
