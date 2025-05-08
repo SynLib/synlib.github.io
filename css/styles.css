@@ -11066,6 +11066,8 @@ footer.footer .social-link:hover {
   .portfolio-item {
     max-width: none;
     margin: 0;
+    display: block;
+    text-align: center;
   }
   .portfolio-item .caption {
     transition: background-color 0.7s, -webkit-clip-path 0.25s ease-out;
@@ -11075,6 +11077,7 @@ footer.footer .social-link:hover {
             clip-path: inset(0px);
   }
   .portfolio-item .caption .caption-content {
+    margin-top: 100px;
     transition: opacity 0.25s;
     margin-left: 5rem;
     margin-right: 5rem;
@@ -11086,6 +11089,9 @@ footer.footer .social-link:hover {
     transition: clip-path 0.25s ease-out, -webkit-clip-path 0.25s ease-out;
     -webkit-clip-path: inset(-1px);
             clip-path: inset(-1px);
+    width: 100%; /* Ensures the image takes the full width of its container */
+    height: 300px; /* Set a fixed height */
+    object-fit: cover; /* Ensures the image scales properly without distortion */
   }
   .portfolio-item:hover img {
     -webkit-clip-path: inset(2rem);
@@ -11107,4 +11113,33 @@ footer.footer .social-link:hover {
   line-height: 7.5rem;
   font-size: 2.25rem;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.news {
+  margin-top: 2rem;
+}
+
+.news h4 {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.news-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.news-list li {
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.news-list a {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.news-list a:hover {
+  color: #ddd;
 }
